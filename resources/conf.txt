@@ -1,0 +1,4 @@
+// Time between two measurements (min)
+20
+// Log file location (must already exist)
+../resources/speedData.log
