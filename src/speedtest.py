@@ -24,7 +24,7 @@ class SpeedTest:
             try:
                 output = self.run()
                 self.write_data(self.logfile, self.convert_to_csv(output))
-                print("\nMeasure : " + str(counter) + ":\nAt " + str(datetime.datetime.now()) + "\n" + output)
+                print("\nMeasure " + str(counter) + ":\nTime: " + str(datetime.datetime.now()) + "\n" + output)
                 time.sleep(self.delta * 60)
             except (KeyboardInterrupt, SystemExit):
                 raise
